@@ -5,6 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 import HomePage from './pages/HomePage';
 import Error404Page from './pages/Error404Page';
+import MatchMakingPage from './pages/MatchMakingPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<Error404Page />} />
+            <Route path="/game-match" element={<MatchMakingPage />} />
           </Routes>
         </Container>
       </BrowserRouter>
